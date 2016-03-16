@@ -16,3 +16,4 @@ RUN cd /opt && tar xzf android-sdk.tgz
 RUN rm -f /opt/android-sdk.tgz 
 RUN chown -R root.root /opt/android-sdk-linux
 
+ENV ANDROID_HOME /opt/android-sdk-linux
