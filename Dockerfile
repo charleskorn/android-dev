@@ -5,6 +5,7 @@ MAINTAINER Charles Korn "me@charleskorn.com"
 RUN apt-get update
 RUN apt-get install curl wget -y
 RUN apt-get install openjdk-8-jdk -y
+RUN apt-get install lib32stdc++6 lib32z1 -y
 RUN apt-get clean
 RUN apt-get autoclean
 
