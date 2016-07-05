@@ -21,4 +21,4 @@ RUN chown -R root.root /opt/android-sdk-linux
 ENV ANDROID_HOME /opt/android-sdk-linux
 ENV PATH ${PATH}:${ANDROID_HOME}/tools:${ANDROID_HOME}/platform-tools
 
-RUN (while true; do echo 'y'; sleep 2; done) | /opt/android-sdk-linux/tools/android update sdk --all --force --no-ui --filter platform-tools,build-tools-23.0.2,android-23,extra-android-support,extra-android-m2repository,extra-google-m2repository,extra-google-google_play_services
+RUN (while true; do echo 'y'; sleep 2; done) | /opt/android-sdk-linux/tools/android update sdk --all --force --no-ui --filter platform-tools,build-tools-23.0.2,build-tools-24.0.0,android-23,android-24,extra-android-support,extra-android-m2repository,extra-google-m2repository,extra-google-google_play_services
